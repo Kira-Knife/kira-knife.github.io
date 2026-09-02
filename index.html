@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polina Lanina — Kira_Knife</title>
+<meta name="description" content="Independent researcher: agent economy, on-chain measurement, payment-infrastructure policy. Papers as Polina Lanina; code as Kira_Knife.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FBFAF7;
+    --ink: #1C2430;
+    --muted: #5B6572;
+    --accent: #2F5496;
+    --rule: #DAD7CE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #14181F;
+      --ink: #E8E6E0;
+      --muted: #9AA3AE;
+      --accent: #8FB0E4;
+      --rule: #2A313C;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.68;
+  }
+  main {
+    max-width: 41rem;
+    padding: clamp(3rem, 9vh, 6.5rem) 1.375rem 4rem;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: clamp(2.15rem, 6.5vw, 3.1rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.75rem;
+  }
+  .signatures {
+    color: var(--muted);
+    margin: 0 0 2.4rem;
+  }
+  .signatures .handle {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.92em;
+    color: var(--ink);
+  }
+  p { margin: 0 0 1.1rem; }
+  .muted { color: var(--muted); }
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  h2 {
+    font-size: 1.02rem;
+    font-weight: 600;
+    margin: 2.6rem 0 0.9rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  dl.ledger { margin: 0; }
+  dl.ledger > div {
+    display: grid;
+    grid-template-columns: 7.2rem 1fr;
+    gap: 0.9rem;
+    margin-bottom: 0.65rem;
+  }
+  dl.ledger dt {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  dl.ledger dd { margin: 0; }
+  .work-title {
+    font-style: italic;
+  }
+  .id {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.88em;
+  }
+  ul.contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.4rem;
+  }
+  footer {
+    margin-top: 3.2rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  @media (max-width: 26rem) {
+    dl.ledger > div { grid-template-columns: 1fr; gap: 0.1rem; margin-bottom: 0.95rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Polina Lanina</h1>
+  <p class="signatures">Writes papers as Lanina. Ships code as <span class="handle">@Kira_Knife</span>.</p>
+
+  <p>Independent researcher working on the agent economy: on-chain measurement of AI-agent
+  payments, and mechanisms that make autonomous spending safe enough to underwrite.
+  Also interested in payment-infrastructure policy — how new settlement architectures
+  meet old transparency rules.</p>
+
+  <p class="muted">Day job in digital banking. Everything on this page is in a personal capacity.</p>
+
+  <h2>Now</h2>
+  <dl class="ledger">
+    <div>
+      <dt>Sep 2026</dt>
+      <dd>Preparing a public write-up of a bonded-spending mechanism for AI agents.</dd>
+    </div>
+    <div>
+      <dt>Sep 4–13</dt>
+      <dd>ETHOnline 2026 — building the first public demo with a team of three.
+      <a href="mailto:polina.lanina90@gmail.com?subject=Solidity%20teammate%20—%20ETHOnline">Looking for a Solidity teammate.</a></dd>
+    </div>
+    <div>
+      <dt>Oct 7–8</dt>
+      <dd>TOKEN2049 Origins hackathon, Singapore.</dd>
+    </div>
+  </dl>
+
+  <h2>Research</h2>
+  <p><span class="work-title"><a href="https://doi.org/10.5281/zenodo.22060042">Comments on the Draft FATF
+  Guidance on Recommendation&nbsp;16 (Payment Transparency)</a></span> — an empirical submission
+  to the FATF public consultation: 4,323 tokenised issues measured against 8,525 conventional
+  bond issues, and a functional test for storage-based transparency models.
+  <span class="id">doi:10.5281/zenodo.22060042</span>. Zenodo, August 2026.</p>
+  <!-- Перед публикацией страницы: открой doi 22250161 в браузере, сверь дату записи и что это
+       версионная DOI (показана в блоке Details на странице записи); при расхождении поправь строку. -->
+  <p><span class="work-title"><a href="https://doi.org/10.5281/zenodo.22250161">Комментарии и предложения
+  по докладу Банка России «Стейблкоины: направления развития в России»</a></span>
+  <span class="muted">(Comments on the Bank of Russia consultation report “Stablecoins: directions
+  for development in Russia”)</span> — a submission to the Bank of Russia public consultation.
+  <span class="id">doi:10.5281/zenodo.22250161</span>. Zenodo, September 2026.</p>
+  <p>Profile: <a href="https://orcid.org/0000-0002-3010-6813"><span class="id">orcid.org/0000-0002-3010-6813</span></a></p>
+
+  <h2>Contact</h2>
+  <ul class="contacts">
+    <li><a href="mailto:polina.lanina90@gmail.com">polina.lanina90@gmail.com</a></li>
+    <li><a href="https://github.com/Kira-Knife"><span class="id">github.com/Kira-Knife</span></a></li>
+    <li><a href="https://x.com/Kira_Knife"><span class="id">x.com/Kira_Knife</span></a></li>
+    <li><a href="https://t.me/Kira_Knife"><span class="id">t.me/Kira_Knife</span></a></li>
+  </ul>
+
+  <footer>Updated September 2026.</footer>
+</main>
+</body>
+</html>
